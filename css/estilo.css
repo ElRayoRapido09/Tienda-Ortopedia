@@ -46,13 +46,19 @@ h3 {
 
 .header {
     background-color: var(--azul-marino);
-    padding: 1rem 5rem;
+    padding: 1rem 5rem
 }
 
 .menu {
     text-align: center;
+    display: grid;
+    gap: 2rem;
 }
 
+.a-buttom {
+    margin-bottom: 2rem;
+    text-decoration: none;
+}
 
 .enlace {
     color: var(--blanco);
@@ -146,7 +152,7 @@ h3 {
 
 .section {
     padding: 6rem 2rem;  
-    background-color: #f2f2f2;
+    background-image: linear-gradient(to top, var(--verde-suave) 0%, var(--azul-marino) 100%);
 }
 
 .subtitulo {
