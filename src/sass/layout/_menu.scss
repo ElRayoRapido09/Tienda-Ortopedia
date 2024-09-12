@@ -1,0 +1,48 @@
+@use 'globales/variables' as v;
+@use 'globales/mixins' as m;
+
+.header {
+    background-color: var(v.$blanco);
+    padding: 1rem 5rem;
+
+    .menu {
+        text-align: center;
+        @include m.contenedor;
+        @include m.grid(2, 2rem);
+        margin-bottom: 3rem;
+
+        .enlaces {
+            grid-row: 2 / 3;
+            grid-column: 1/3;
+    
+            a {
+                color: v.$azul-suave;
+                margin: 0 1.5rem;
+                text-decoration: none;
+                font-weight: bold;
+                text-transform: uppercase;
+                text-align: center;
+                display: block;
+                line-height: 3rem;
+    
+                &:hover {
+                    color: v.$naranja;
+                }
+            }
+        }
+        @include m.tablet {
+            .enlaces {
+                display: flex;
+                gap: 1rem;
+            }
+        }
+    }
+    
+    @include m.tablet {
+        .menu {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }  
+}

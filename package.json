@@ -1,0 +1,17 @@
+{
+  "name": "orthopedic--store",
+  "version": "1.0.0",
+  "description": "Pagina web para ortopedia",
+  "main": "java.js",
+  "type": "module",
+  "scripts": {
+    "sass": "gulp watchFiles"
+  },
+  "author": "ElRayoRapido",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^5.0.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.77.8"
+  }
+}

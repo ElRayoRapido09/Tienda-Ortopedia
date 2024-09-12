@@ -1,0 +1,40 @@
+@use "variables" as v;
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *:after, *:before {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 16px;
+    font-family: v.$fuente;
+    font-style: normal;
+    margin: 0;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 2.8rem;
+    font-weight: 900;
+    color: v.$azul-suave;
+}
+
+h2 {
+    font-size: 3.2rem;
+    color: v.$gris-oscuro;
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: v.$gris-oscuro;
+}
+
+a {
+    text-decoration: none;
+}

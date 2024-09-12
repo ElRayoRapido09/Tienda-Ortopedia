@@ -1,0 +1,21 @@
+@use 'globales/variables' as v;
+
+.icon {
+    &:hover {
+        color: v.$naranja;
+    }
+}
+
+.busqueda {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__input {
+        color: v.$blanco;
+        background-color: v.$verde-suave;
+        border-radius: 2rem;
+        border-style: none;
+        padding: 1rem;
+    }
+}
