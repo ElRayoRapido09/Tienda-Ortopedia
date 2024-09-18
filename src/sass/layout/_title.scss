@@ -1,8 +1,42 @@
+@use "globales/variables" as v;
+@use "globales/mixins" as m;
+
 .presentacion {
     background-image: url('../../../src/img/Fondo-presentacion.jpg');
     background-size: cover;
     background-position: center;
-    color: #FFFFFF;
+    color: #FFFFFF; 
     text-align: center;
     padding: 10rem 2rem;
+
+    h1 {
+        font-size: 4.8rem;
+    }
+
+    p {
+        font-size: 2rem;
+        color: v.$gris-oscuro;
+    }
+
+    a {
+        display: block;
+        background-color: v.$azul-suave;
+        color: v.$gris-oscuro;
+        padding: 1rem 3rem;
+        text-decoration: none;
+        font-size: 1.8rem;
+        font-weight: 700;
+        border-radius: 2rem;
+        margin-bottom: 2rem;
+        transition: background-color 0.6s ease;
+
+        &:hover {
+            background-color: v.$naranja;
+        }
+
+        @include m.tablet {
+            display: inline-block;
+        }
+    }
 }
+

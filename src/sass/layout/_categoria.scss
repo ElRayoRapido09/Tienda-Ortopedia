@@ -1,0 +1,58 @@
+@use "globales/variables" as v;
+@use "globales/mixins" as m;
+
+.contenedor-categorias {
+    padding: 5rem 0;
+    background-color: v.$azul-suave;
+
+    .titulo-categoria {
+        text-align: center;
+    }
+
+    .seccion-categoria {
+        display: grid;
+        gap: 2rem;
+        padding: 8rem;
+        @include m.tablet {
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+        }
+
+        @include m.desktop {
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+        }
+    }
+}
+
+.bench-wheelchair {
+    @include m.tablet {
+        grid-column: 2 / 4;
+    }
+
+    @include m.desktop {
+        grid-row: 2 / 3;
+        grid-column: 4 / 5;
+    }
+}
+
+.categoria {
+    text-align: center;
+    align-content: center;
+
+    .contenedor-enlace {
+        background-color: v.$azul-suave;
+        padding: .5rem;
+
+        &:hover {
+            background-color: v.$verde-menta;
+            border-radius: 6rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 0;
+            font-weight: 800;
+        }
+    }
+}

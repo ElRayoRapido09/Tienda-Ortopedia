@@ -1,8 +1,9 @@
 @use 'globales/variables' as v;
 
 .icon {
+    stroke: v.$azul-suave;
     &:hover {
-        color: v.$naranja;
+        stroke: v.$naranja;
     }
 }
 
